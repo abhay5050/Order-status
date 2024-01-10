@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "9402857c-9d12-48ce-9011-5306598c0685",
+		"name": "Blue API Error IBM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "32139023-9402857c-9d12-48ce-9011-5306598c0685"
+	},
+	"item": [
+		{
+			"name": "https://dev.api.ibm.com:1443/q2cdsw/bluetest/dswsap/order/get_order_status;v=1/ScwOrderStatusMain('D000022204')?$expand=ScwMain_HeaderStatusNav,ScwMain_ItemsStatusNav&$format=json",
+			"id": "8c596915-6f2d-4f3d-9aa1-f80a1fe86158",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "L62JS9UTAPHGONB",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Y9GPRK866",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "defd24b9-ab66-4231-b353-e4ffbc99dc4c",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "rT6yT3aR6wT4gG5qO2kB8qB2mU8kI2gK2pP3eB8jE7rT1hC4hL",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev.api.ibm.com:1443/q2cdsw/bluetest/dswsap/order/get_order_status;v=1/OrderStatusMain('0062243171')?$expand=Main_HeaderStatusNav,Main_ItemsStatusNav&$format=json",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"api",
+						"ibm",
+						"com"
+					],
+					"port": "1443",
+					"path": [
+						"q2cdsw",
+						"bluetest",
+						"dswsap",
+						"order",
+						"get_order_status;v=1",
+						"OrderStatusMain('0062243171')"
+					],
+					"query": [
+						{
+							"key": "$expand",
+							"value": "Main_HeaderStatusNav,Main_ItemsStatusNav"
+						},
+						{
+							"key": "$format",
+							"value": "json"
+						}
+					]
+				},
+				"description": "Results"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "Y9GPRK866",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "L62JS9UTAPHGONB",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fb52d796-2d96-4ce8-97b1-177018b5d191",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a69ec4ac-ff32-40ae-9f13-9a76f2d984e4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
